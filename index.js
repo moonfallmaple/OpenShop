@@ -10,7 +10,7 @@ import { Provider ,connect } from 'react-redux';
 //React部分:计算器组建
 
 //新建shop用于展示，所有的原材料和加工都在仓库
-class Counter extends Component {
+export class Counter extends Component {
   render() {
     const {count,increment}=this.props
     return (
@@ -77,7 +77,8 @@ const mapDispatchToProps = (dispatch) => {
 Counter=connect(mapStateToProps,mapDispatchToProps)(Counter)
 
 
-export default Counter
+
+
 
 
 //ReactDOM部分
