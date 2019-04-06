@@ -77,7 +77,7 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 //创建物流：链接
-Counter=connect(mapStateToProps,mapDispatchToProps)(Counter)
+const App=connect(mapStateToProps,mapDispatchToProps)(Counter)
 
 
 
@@ -88,7 +88,7 @@ Counter=connect(mapStateToProps,mapDispatchToProps)(Counter)
 
 //开店
 ReactDOM.render(<Provider store={store}>
-                  <Counter />
+                  <App />
                 </Provider>,document.getElementById('root'));
 
 
