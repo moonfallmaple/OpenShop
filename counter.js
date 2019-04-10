@@ -13,6 +13,7 @@ import { Provider ,connect } from 'react-redux';
 export class Counter extends Component {
   render() {
     const {countAtShop,increment}=this.props
+    console.log(this.props.countAtShop)
     return (
       <div className="App">
         <span>{countAtShop}</span>
